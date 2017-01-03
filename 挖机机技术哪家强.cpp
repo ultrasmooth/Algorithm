@@ -6,23 +6,28 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char** argv) { 
-	const int maxn =100010; //Êý×éµÄ´óÐ¡±ØÐëÊÇ³£Á¿ 
-	int school[maxn]={0};//Èç¹ûÏë°ÑÊý×é³õÊ¼»¯£¬¾Í¿ÉÒÔÓÃÕâÖÖ°ì·¨¡£ 
-	int main(){
+	const int maxn =100010; 
+	int school[maxn]={0};
+	
 		int n, schid,score;
-		scanf("%d",n);
-		for(int=i,i<n;i++){
-			scanf("%d%d",&schid,%score);
+		scanf("%d",&n);
+		for(int i=0;i<n;i++){
+			scanf("%d%d",&schid,&score);
 			school[schid]+=score;
 		}
 		
 	int k=1,max=-1;
-	for(int i=1;i<=n;i++) {//´ÓËùÓÐÑ§Ð£ÖÐÑ¡Ôñ×î¸ß·ÖµÄÒ»¸ö
-		if(school[i]>MAX){
-			MAX=school[i];
+	for(int i=1;i<=n;i++) {
+		if(school[i]>max){
+			max=school[i];
 			k=i;
 	}
 }
-printf("%d%d\n",k,MAX);
+printf("%d %d\n",k,max);
 return 0;
+
+	
+	
+    
+
 }
