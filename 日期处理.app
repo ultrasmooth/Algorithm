@@ -16,8 +16,8 @@ int main(int argc, char** argv) {
 			time2 = temp;
 	}
 	y1 = time1 / 10000, m1 = time1 % 10000 /100, d1 = time1 % 100; 
-	y2 = time2 / 10000, m2 = time2 % 10000 / 100, d2 = time2 % 100;
-	int ans = 1;
+	y2 = time2 / 10000, m2 = time2 % 10000 / 100, d2 = time2 % 100;//time2%100是求出日期的方法	
+int ans = 1;
 	while(y1<y2||m1<m2||d1<d2){
 		d1++;
 		if(d1==month[m1][isLeap(y1)]+1){
